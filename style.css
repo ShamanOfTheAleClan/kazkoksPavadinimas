@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.25s ease-in-out;
+}
+body {
+    background: linear-gradient(#075a8a, rgba(85, 9, 85, 0.781));
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+    background-color: steelblue;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    background-image: url('assets/download.png');
+    background-size: contain;
+    background-position: center;
+    width: 100px;
+    background-repeat: no-repeat;
+}
+.menu-item {
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.menu-item:nth-of-type(1) {
+    background-image:url('assets/animal-2028258_960_720.png');
+}
+.menu-item:nth-of-type(2) {
+    background-image:url('assets/animal-logo-png-lion-king-icon-logo-animal-pride-wild-head-532.png');
+}
+.menu-item:nth-of-type(3) {
+    background-image:url('assets/bull-logo-5AB51E9A36-seeklogo.com.png');
+}
+
+section, nav, footer {
+    padding: 0 40px;
+}
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.menu-item:hover {
+    background-color: olive;
+}
+.hero-image {
+    height: 400px;
+    background-image: url('assets/download.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+@keyframes sun {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes boat {
+    0% {transform:translateX(-200px) translateY(200px) rotate(-10deg);}
+    5% {transform:translateX(-180px) translateY(190px) rotate(-8deg);}
+    10% {transform:translateX(-160px) translateY(180px) rotate(-6deg);}
+    15% {transform:translateX(-140px) translateY(170px) rotate(-4deg);}
+    20% {transform:translateX(-120px) translateY(180px) rotate(-2deg);}
+    25% {transform:translateX(-100px) translateY(190px) rotate(0deg);}
+    30% {transform:translateX(-80px) translateY(180px) rotate(2deg);}
+    35% {transform:translateX(-60px) translateY(170px) rotate(4deg);}
+    40% {transform:translateX(-40px) translateY(160px) rotate(2deg);}
+    45% {transform:translateX(-20px) translateY(150px) rotate(0deg);}
+    50% {transform:translateX(0px) translateY(160px) rotate(-2deg);}
+    55% {transform:translateX(20px) translateY(170px) rotate(0deg);}
+    60% {transform:translateX(40px) translateY(180px) rotate(2deg);}
+    65% {transform:translateX(60px) translateY(170px) rotate(4deg);}
+    70% {transform:translateX(80px) translateY(160px) rotate(6deg);}
+    75% {transform:translateX(100px) translateY(170px) rotate(8deg);}
+    80% {transform:translateX(120px) translateY(180px) rotate(6deg);}
+    85% {transform:translateX(140px) translateY(190px) rotate(4deg);}
+    90% {transform:translateX(160px) translateY(200px) rotate(2deg);}
+    95% {transform:translateX(180px) translateY(190px) rotate(4deg);}
+    100% {transform:translateX(200px) translateY(200px) rotate(6deg);}
+}
+.boat {
+    height: 80px;
+    width: auto;
+    background-image:url('assets/boat.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: boat;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0.59,-0.05, 0.29, 1.07);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+.sun {
+    height: 80px;
+    width: 80px;
+    background-image: url('assets/sun_PNG13427.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: sun;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+section:nth-of-type(2) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+section:nth-of-type(2) > .picture {
+    height: 170px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.picture:hover {
+    transform: scale(1.2);
+    transform-origin: center;
+}
+.picture:nth-of-type(1) {
+    background-image: url('assets/download\ \(1\).jpg');
+}
+.picture:nth-of-type(2) {
+    background-image: url('assets/download\ \(2\).jpg');
+}
+.picture:nth-of-type(3) {
+    background-image: url('assets/download\ \(3\).jpg');
+}
+.lists {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 50px;
+    background-color: wheat;
+}
+li {
+    list-style-type: none;
+    color: #2b1b50;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-bottom: 2px dashed #2b1b50;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.line {
+    border-right: 5px dotted #2b1b50;
+    width: 1px;
+}
+footer {
+    background-color: slategray;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
